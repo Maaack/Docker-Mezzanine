@@ -13,6 +13,7 @@ oauthlib==2.0.1
 olefile==0.44
 packaging==16.8
 Pillow==4.0.0
+psycopg2==2.6.1
 pyparsing==2.2.0
 pytz==2016.10
 requests==2.13.0
