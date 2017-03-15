@@ -39,7 +39,7 @@ DATABASES['default'] = DATABASES['docker:pg']
 ###################
 
 # Domains for public site
-# ALLOWED_HOSTS = [""]
+ALLOWED_HOSTS = ["", "localhost"]
 
 # These settings are used by the default fabfile.py provided.
 # Check fabfile.py for defaults.
