@@ -22,8 +22,17 @@ DATABASES = {
         "HOST": "",
         # Set to empty string for default. Not used with sqlite3.
         "PORT": "",
+    },
+    'docker:pg': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432
     }
 }
+
+DATABASES['default'] = DATABASES['docker:pg']
 
 ###################
 # DEPLOY SETTINGS #
