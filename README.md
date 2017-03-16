@@ -18,7 +18,11 @@ Configured to create separate container for running PostgreSQL,
    * `ls -al`
    * It should list files, like those shown here: https://github.com/Maaack/Docker-Mezzanine
 
-4. Run Docker Compose locally
+4. Set the local settings
+   * `mv default_local_settings.py local_settings.py`
+   * You should also go into the file and change the SECRET_KEY
+
+5. Run Docker Compose locally
    * `docker-compose up` 
    * You might need to run Docker Compose as the admin
    * `sudo docker-compose up`
@@ -40,9 +44,10 @@ Configured to create separate container for running PostgreSQL,
 4. Exit the container
    * `CONTAINER_NAME$> exit`
 
-5. Open your browser and go to http://localhost:8000/ 
-   * You should see all sorts of amazing things there
-   * Or error messages, very helpful error messages
+### All done ###
+* Open your browser and go to http://localhost:8000/ 
+  * You should see all sorts of amazing things there
+  * Or error messages, very helpful error messages
 
 ## Additional Resources ##
 * Writing your first Django App Tutorials: https://docs.djangoproject.com/en/1.10/intro/tutorial01/
