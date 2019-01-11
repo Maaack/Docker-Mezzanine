@@ -4,11 +4,11 @@ bleach==2.0.0
 chardet==2.3.0
 Django==1.10.6
 django-contrib-comments==1.8.0
-filebrowser-safe==0.4.7
+filebrowser-safe==0.5.0
 future==0.16.0
-grappelli-safe==0.4.6
+grappelli-safe==0.5.0
 html5lib==0.999999999
-Mezzanine==4.2.3
+Mezzanine==4.3.1
 oauthlib==2.0.1
 olefile==0.44
 packaging==16.8
