@@ -6,7 +6,7 @@ services:
       - ./datavolume:/var/lib/postgresql
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: ./wait-for-it.sh db:5432 -t 30 -- python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
